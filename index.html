@@ -19,7 +19,7 @@
             align-items: center;
         }
 
-        /* Neon glow controlled by CSS variables */
+        /* Dimmer neon glow controlled by CSS variables */
         video {
             width: 100%;
             height: auto;
@@ -27,8 +27,8 @@
             margin-bottom: 20px;
             aspect-ratio: 16/9;
             border-radius: 10px;
-            box-shadow: 0 0 15px var(--neon-color, #00f), 0 0 30px var(--neon-color, #00f),
-                        0 0 45px var(--neon-color, #f0f), 0 0 60px var(--neon-color, #f0f);
+            box-shadow: 0 0 10px var(--neon-color, #00f), 0 0 20px var(--neon-color, #00f),
+                        0 0 30px var(--neon-color, #f0f), 0 0 40px var(--neon-color, #f0f);
             transition: box-shadow 0.2s ease;
         }
 
@@ -88,15 +88,13 @@
             padding: 10px;
             border: 1px solid #555;
             border-radius: 5px;
-            background-color: rgba(255, 255, 255, 0.1);
+            background-color: rgba(34, 34, 34, 0.5); /* Transparent background */
             color: white;
             transition: background-color 0.3s ease, color 0.3s ease;
-            width: 100%; /* Ensuring the toggle has the same width */
-            text-align: center;
         }
 
         #neon-toggle.active {
-            background-color: green; /* Green when active */
+            background-color: green; /* Green when on */
             color: white;
         }
 
@@ -153,9 +151,9 @@
 <body>
 
     <div id="player-container">
-        <div id="web-ipTV">web IPTV</div>
+        <div id="web-ipTV">web IPTV</div> <!-- Web IPTV text above the player -->
         
-        <video id="video" controls playsinline autoplay></video>
+        <video id="video" controls playsinline autoplay></video> <!-- Autoplay without muted -->
 
         <div id="search-bar-container">
             <input type="text" id="search-bar" placeholder="Search for channels..." onkeyup="filterChannels()">
@@ -173,7 +171,7 @@
 
     <script>
         const m3uLink = 'https://raw.githubusercontent.com/rahul979854/iptvfree/main/assess';
-        const targetUrl = 'https://cdn2.pishow.tv/live/141/master.m3u8';
+        const targetUrl = 'https://cdn2.pishow.tv/live/141/master.m3u8'; // Target channel URL
 
         // Neon lights toggle functionality
         let neonActive = true;
@@ -183,18 +181,13 @@
             const toggleButton = document.getElementById('neon-toggle');
 
             if (neonActive) {
-                video.style.boxShadow = 'none';
+                video.style.boxShadow = 'none';  // Completely turn off the neon lights
                 toggleButton.classList.remove('active');
             } else {
-                video.style.boxShadow = '0 0 15px var(--neon-color, #00f), 0 0 30px var(--neon-color, #00f), 0 0 45px var(--neon-color, #f0f), 0 0 60px var(--neon-color, #f0f)';
+                video.style.boxShadow = '0 0 10px var(--neon-color, #00f), 0 0 20px var(--neon-color, #00f), 0 0 30px var(--neon-color, #f0f), 0 0 40px var(--neon-color, #f0f)';  // Restore neon lights
                 toggleButton.classList.add('active');
             }
             neonActive = !neonActive;
-
-            // Haptic feedback for toggle button
-            if (navigator.vibrate) {
-                navigator.vibrate(100); // Medium vibration for toggle
-            }
         }
 
         async function fetchM3U() {
@@ -268,13 +261,7 @@
 
                 tile.onclick = () => {
                     playChannel(channel.url);
-                    
-                    // Haptic feedback for channel selection
-                    if (navigator.vibrate) {
-                        navigator.vibrate(100); // Medium vibration for channel click
-                    }
                 };
-
                 channelList.appendChild(tile);
             });
         }
@@ -282,29 +269,29 @@
         function playChannel(url) {
             const video = document.getElementById('video');
             video.src = url;
-            video.play();
-
-            // Haptic feedback for video play
-            if (navigator.vibrate) {
-                navigator.vibrate(100); // Medium vibration for video play
-            }
+            video.play().then(() => {
+                console.log("Autoplay started successfully with sound.");
+            }).catch((error) => {
+                console.log("Autoplay failed. Trying without sound.");
+                video.muted = true; // Mute the video if autoplay fails
+                video.play();
+            });
         }
 
         function filterChannels() {
-            const query = document.getElementById('search-bar').value.toLowerCase();
-            const tiles = document.querySelectorAll('.channel-tile');
-            tiles.forEach(tile => {
-                const name = tile.querySelector('.channel-name').textContent.toLowerCase();
-                tile.style.display = name.includes(query) ? 'block' : 'none';
-            });
+            const searchBar = document.getElementById('search-bar');
+            const filter = searchBar.value.toLowerCase();
+            const channelList = document.getElementById('channel-list');
+            const channels = channelList.getElementsByClassName('channel-tile');
 
-            // Haptic feedback for search action
-            if (navigator.vibrate) {
-                navigator.vibrate(100); // Medium vibration for search
+            for (let i = 0; i < channels.length; i++) {
+                const channel = channels[i];
+                const channelName = channel.getElementsByClassName('channel-name')[0].textContent.toLowerCase();
+                channel.style.display = channelName.includes(filter) ? '' : 'none';
             }
         }
 
-        // Initialize channels on page load
+        // Load channels when the page loads
         window.onload = loadChannels;
     </script>
 </body>
