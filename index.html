@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web IPTV Player</title>
+    <title>Reactive Neon Colors IPTV Player</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -19,6 +19,7 @@
             align-items: center;
         }
 
+        /* Neon glow controlled by CSS variables */
         video {
             width: 100%;
             height: auto;
@@ -56,15 +57,16 @@
             justify-content: space-between;
             width: 100%;
             margin: 20px 0;
+            gap: 0; /* Removed any gap between search bar and neon switch */
         }
 
         #search-bar {
-            width: 75%;
+            width: 80%; /* Adjusted width for better alignment */
             padding: 10px;
             font-size: 16px;
             background-color: rgba(255, 255, 255, 0.1);
             border: none;
-            border-radius: 5px;
+            border-radius: 5px 0 0 5px; /* Rounded edges on the left */
             color: white;
             backdrop-filter: blur(5px);
             transition: background-color 0.3s ease;
@@ -78,22 +80,24 @@
         #neon-switch {
             display: flex;
             align-items: center;
-            justify-content: flex-end;
-            width: 25%;
+            width: 20%; /* Adjusted width */
+            margin-left: 0; /* Removed margin */
         }
 
         #neon-toggle {
             cursor: pointer;
             padding: 10px;
             border: 1px solid #555;
-            border-radius: 5px;
-            background-color: rgba(255, 255, 255, 0.1); /* Transparent look */
+            border-radius: 0 5px 5px 0; /* Rounded edges on the right */
+            background-color: rgba(255, 255, 255, 0.1);
             color: white;
             transition: background-color 0.3s ease, color 0.3s ease;
+            width: 100%;
+            text-align: center;
         }
 
         #neon-toggle.active {
-            background-color: green; /* Neon ON */
+            background-color: green;
             color: white;
         }
 
@@ -150,9 +154,9 @@
 <body>
 
     <div id="player-container">
-        <div id="web-ipTV">web IPTV</div> <!-- Web IPTV text above the player -->
+        <div id="web-ipTV">web IPTV</div>
         
-        <video id="video" controls playsinline autoplay></video> <!-- Autoplay without muted -->
+        <video id="video" controls playsinline autoplay></video>
 
         <div id="search-bar-container">
             <input type="text" id="search-bar" placeholder="Search for channels..." onkeyup="filterChannels()">
@@ -170,7 +174,7 @@
 
     <script>
         const m3uLink = 'https://raw.githubusercontent.com/rahul979854/iptvfree/main/assess';
-        const targetUrl = 'https://cdn2.pishow.tv/live/141/master.m3u8'; // Target channel URL
+        const targetUrl = 'https://cdn2.pishow.tv/live/141/master.m3u8';
 
         // Neon lights toggle functionality
         let neonActive = true;
@@ -180,15 +184,18 @@
             const toggleButton = document.getElementById('neon-toggle');
 
             if (neonActive) {
-                video.style.boxShadow = 'none';  // Turn off the neon lights
+                video.style.boxShadow = 'none';
                 toggleButton.classList.remove('active');
-                toggleButton.style.backgroundColor = 'rgba(255, 255, 255, 0.1)';  // Transparent color for OFF
             } else {
-                video.style.boxShadow = '0 0 15px var(--neon-color, #00f), 0 0 30px var(--neon-color, #00f), 0 0 45px var(--neon-color, #f0f), 0 0 60px var(--neon-color, #f0f)';  // Turn on neon lights
+                video.style.boxShadow = '0 0 15px var(--neon-color, #00f), 0 0 30px var(--neon-color, #00f), 0 0 45px var(--neon-color, #f0f), 0 0 60px var(--neon-color, #f0f)';
                 toggleButton.classList.add('active');
-                toggleButton.style.backgroundColor = 'green';  // Green for ON
             }
             neonActive = !neonActive;
+
+            // Haptic feedback for toggle button
+            if (navigator.vibrate) {
+                navigator.vibrate(100); // Medium vibration for toggle
+            }
         }
 
         async function fetchM3U() {
@@ -231,6 +238,7 @@
             const channels = await fetchM3U();
             loadingDiv.style.display = 'none'; // Hide loading
             const channelList = document.getElementById('channel-list');
+
             if (channels.length === 0) {
                 channelList.innerHTML = '<div>No channels found.</div>';
                 return;
@@ -259,9 +267,10 @@
                 channelName.textContent = channel.name;
                 tile.appendChild(channelName);
 
-                tile.onclick = () => {
+                 tile.onclick = () => {
                     playChannel(channel.url);
                 };
+
                 channelList.appendChild(tile);
             });
         }
@@ -269,28 +278,26 @@
         function playChannel(url) {
             const video = document.getElementById('video');
             video.src = url;
-            video.play().then(() => {
-                console.log("Autoplay started successfully with sound.");
-            }).catch((error) => {
-                console.log("Autoplay failed, muting video and retrying.");
-                video.muted = true;
-                video.play();
-            });
-            video.scrollIntoView({ behavior: 'smooth' });
+            video.play();
         }
 
         function filterChannels() {
-            const filter = document.getElementById('search-bar').value.toUpperCase();
-            const channels = document.getElementById('channel-list').getElementsByClassName('channel-tile');
-
-            for (let i = 0; i < channels.length; i++) {
-                const channel = channels[i];
-                const txtValue = channel.textContent || channel.innerText;
-                channel.style.display = txtValue.toUpperCase().indexOf(filter) > -1 ? "" : "none";
-            }
+            const searchValue = document.getElementById('search-bar').value.toLowerCase();
+            const channelTiles = document.querySelectorAll('.channel-tile');
+            channelTiles.forEach(tile => {
+                const channelName = tile.querySelector('.channel-name').textContent.toLowerCase();
+                if (channelName.includes(searchValue)) {
+                    tile.style.display = '';
+                } else {
+                    tile.style.display = 'none';
+                }
+            });
         }
 
-        window.onload = loadChannels;
+        // Load the channels when the page is ready
+        window.onload = () => {
+            loadChannels();
+        };
     </script>
 
 </body>
