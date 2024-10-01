@@ -256,44 +256,4 @@
                 logoImg.src = channel.logo ? channel.logo : 'https://via.placeholder.com/80';
                 tile.appendChild(logoImg);
 
-                const channelName = document.createElement('div');
-                channelName.classList.add('channel-name');
-                channelName.textContent = channel.name;
-                tile.appendChild(channelName);
-
-                tile.onclick = () => {
-                    playChannel(channel.url);
-                };
-                channelList.appendChild(tile);
-            });
-        }
-
-        function playChannel(url) {
-            const video = document.getElementById('video');
-            video.src = url;
-            video.play().then(() => {
-                console.log("Autoplay started successfully with sound.");
-            }).catch((error) => {
-                console.log("Autoplay failed, muting video and retrying.");
-                video.muted = true;
-                video.play();
-            });
-            video.scrollIntoView({ behavior: 'smooth' });
-        }
-
-        function filterChannels() {
-            const filter = document.getElementById('search-bar').value.toUpperCase();
-            const channels = document.getElementById('channel-list').getElementsByClassName('channel-tile');
-
-            for (let i = 0; i < channels.length; i++) {
-                const channel = channels[i];
-                const txtValue = channel.textContent || channel.innerText;
-                channel.style.display = txtValue.toUpperCase().indexOf(filter) > -1 ? "" : "none";
-            }
-        }
-
-        window.onload = loadChannels;
-    </script>
-
-</body>
-</html>
+                const
