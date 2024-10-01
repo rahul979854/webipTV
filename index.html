@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reactive Neon Colors IPTV Player</title>
+    <title>Web IPTV Player</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -19,7 +19,6 @@
             align-items: center;
         }
 
-        /* Neon glow controlled by CSS variables */
         video {
             width: 100%;
             height: auto;
@@ -232,7 +231,6 @@
             const channels = await fetchM3U();
             loadingDiv.style.display = 'none'; // Hide loading
             const channelList = document.getElementById('channel-list');
-
             if (channels.length === 0) {
                 channelList.innerHTML = '<div>No channels found.</div>';
                 return;
@@ -256,4 +254,44 @@
                 logoImg.src = channel.logo ? channel.logo : 'https://via.placeholder.com/80';
                 tile.appendChild(logoImg);
 
-                const
+                const channelName = document.createElement('div');
+                channelName.classList.add('channel-name');
+                channelName.textContent = channel.name;
+                tile.appendChild(channelName);
+
+                tile.onclick = () => {
+                    playChannel(channel.url);
+                };
+                channelList.appendChild(tile);
+            });
+        }
+
+        function playChannel(url) {
+            const video = document.getElementById('video');
+            video.src = url;
+            video.play().then(() => {
+                console.log("Autoplay started successfully with sound.");
+            }).catch((error) => {
+                console.log("Autoplay failed, muting video and retrying.");
+                video.muted = true;
+                video.play();
+            });
+            video.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function filterChannels() {
+            const filter = document.getElementById('search-bar').value.toUpperCase();
+            const channels = document.getElementById('channel-list').getElementsByClassName('channel-tile');
+
+            for (let i = 0; i < channels.length; i++) {
+                const channel = channels[i];
+                const txtValue = channel.textContent || channel.innerText;
+                channel.style.display = txtValue.toUpperCase().indexOf(filter) > -1 ? "" : "none";
+            }
+        }
+
+        window.onload = loadChannels;
+    </script>
+
+</body>
+</html>
