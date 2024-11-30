@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reactive Neon Colors IPTV Player</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #222;
+            color: white;
+            margin: 0;
+            padding: 20px;
+        }
+
+        #player-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Neon glow controlled by CSS variables */
+        video {
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+            margin-bottom: 20px;
+            aspect-ratio: 16/9;
+            border-radius: 10px;
+            box-shadow: 0 0 15px var(--neon-color, #00f), 0 0 30px var(--neon-color, #00f),
+                        0 0 45px var(--neon-color, #f0f), 0 0 60px var(--neon-color, #f0f);
+            transition: box-shadow 0.2s ease;
+        }
+
+        #web-ipTV {
+            font-size: 30px;
+            font-weight: bold;
+            color: transparent;
+            background: linear-gradient(to right, #ff007f, #ff7f00, #7fff00, #00ff7f, #007fff, #0000ff);
+            background-clip: text;
+            -webkit-background-clip: text;
+            animation: text-gradient 5s infinite;
+            margin-bottom: 10px;
+        }
+
+        @keyframes text-gradient {
+            0%, 100% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+        }
+
+        #search-bar-container {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin: 20px 0;
+            gap: 0; /* Removed any gap between search bar and neon switch */
+        }
+
+        #search-bar {
+            width: 80%; /* Adjusted width for better alignment */
+            padding: 10px;
+            font-size: 16px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border: none;
+            border-radius: 5px 0 0 5px; /* Rounded edges on the left */
+            color: white;
+            backdrop-filter: blur(5px);
+            transition: background-color 0.3s ease;
+        }
+
+        #search-bar:focus {
+            outline: none;
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        #neon-switch {
+            display: flex;
+            align-items: center;
+            width: 20%; /* Adjusted width */
+            margin-left: 0; /* Removed margin */
+        }
+
+        #neon-toggle {
+            cursor: pointer;
+            padding: 10px;
+            border: 1px solid #555;
+            border-radius: 0 5px 5px 0; /* Rounded edges on the right */
+            background-color: rgba(255, 255, 255, 0.1);
+            color: white;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            width: 100%;
+            text-align: center;
+        }
+
+        #neon-toggle.active {
+            background-color: green;
+            color: white;
+        }
+
+        #channel-list-container {
+            width: 100%;
+            max-height: 400px;
+            overflow-y: scroll;
+            scrollbar-width: thin;
+        }
+
+        #channel-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            gap: 15px;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .channel-tile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            cursor: pointer;
+            background-color: #333;
+            border-radius: 10px;
+            transition: transform 0.2s;
+        }
+
+        .channel-tile:hover {
+            transform: scale(1.05);
+            background-color: #444;
+        }
+
+        .channel-tile img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+
+        .channel-name {
+            font-size: 14px;
+            text-align: center;
+        }
+
+        #loading {
+            color: yellow;
+            margin: 20px 0;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="player-container">
+        <div id="web-ipTV">web IPTV</div>
+        
+        <video id="video" controls playsinline autoplay></video>
+
+        <div id="search-bar-container">
+            <input type="text" id="search-bar" placeholder="Search for channels..." onkeyup="filterChannels()">
+            <div id="neon-switch">
+                <div id="neon-toggle" class="active" onclick="toggleNeon()">neon⚡</div>
+            </div>
+        </div>
+
+        <div id="loading">Loading channels...</div>
+        
+        <div id="channel-list-container">
+            <div id="channel-list"></div>
+        </div>
+    </div>
+
+    <script>
+        const m3uLink = 'https://raw.githubusercontent.com/rahul979854/iptvfree/main/assess';
+        const targetUrl = 'https://cdn2.pishow.tv/live/141/master.m3u8';
+
+        // Neon lights toggle functionality
+        let neonActive = true;
+
+        function toggleNeon() {
+            const video = document.querySelector('video');
+            const toggleButton = document.getElementById('neon-toggle');
+
+            if (neonActive) {
+                video.style.boxShadow = 'none';
+                toggleButton.classList.remove('active');
+            } else {
+                video.style.boxShadow = '0 0 15px var(--neon-color, #00f), 0 0 30px var(--neon-color, #00f), 0 0 45px var(--neon-color, #f0f), 0 0 60px var(--neon-color, #f0f)';
+                toggleButton.classList.add('active');
+            }
+            neonActive = !neonActive;
+
+            // Haptic feedback for toggle button
+            if (navigator.vibrate) {
+                navigator.vibrate(100); // Medium vibration for toggle
+            }
+        }
+
+        async function fetchM3U() {
+            try {
+                const response = await fetch(m3uLink);
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const data = await response.text();
+                return parseM3U(data);
+            } catch (error) {
+                console.error('Error fetching M3U file:', error);
+                return [];
+            }
+        }
+
+        function parseM3U(data) {
+            const channels = [];
+            const lines = data.split('\n');
+            let currentChannel = {};
+            lines.forEach(line => {
+                line = line.trim();
+                if (line.startsWith('#EXTINF:')) {
+                    const channelInfo = line.match(/#EXTINF:.*,(.*)/);
+                    currentChannel.name = channelInfo ? channelInfo[1].trim() : 'Unknown Channel';
+                    const logoMatch = line.match(/tvg-logo="(.*?)"/);
+                    currentChannel.logo = logoMatch ? logoMatch[1] : '';
+                } else if (line.startsWith('http')) {
+                    currentChannel.url = line.trim();
+                    channels.push(currentChannel);
+                    currentChannel = {};
+                }
+            });
+            return channels.filter(channel => channel.url);
+        }
+
+        async function loadChannels() {
+            const loadingDiv = document.getElementById('loading');
+            loadingDiv.style.display = 'block'; // Show loading
+            const channels = await fetchM3U();
+            loadingDiv.style.display = 'none'; // Hide loading
+            const channelList = document.getElementById('channel-list');
+
+            if (channels.length === 0) {
+                channelList.innerHTML = '<div>No channels found.</div>';
+                return;
+            }
+
+            // Search for the specific channel to auto-play
+            const targetChannel = channels.find(channel => channel.url === targetUrl);
+
+            if (targetChannel) {
+                playChannel(targetChannel.url); // Auto-play the found channel
+            } else {
+                // If target URL not found, default to the first channel
+                playChannel(channels[0].url);
+            }
+
+            channels.forEach(channel => {
+                const tile = document.createElement('div');
+                tile.classList.add('channel-tile');
+
+                const logoImg = document.createElement('img');
+                logoImg.src = channel.logo ? channel.logo : 'https://via.placeholder.com/80';
+                tile.appendChild(logoImg);
+
+                const channelName = document.createElement('div');
+                channelName.classList.add('channel-name');
+                channelName.textContent = channel.name;
+                tile.appendChild(channelName);
+
+                 tile.onclick = () => {
+                    playChannel(channel.url);
+                };
+
+                channelList.appendChild(tile);
+            });
+        }
+
+        function playChannel(url) {
+            const video = document.getElementById('video');
+            video.src = url;
+            video.play();
+        }
+
+        function filterChannels() {
+            const searchValue = document.getElementById('search-bar').value.toLowerCase();
+            const channelTiles = document.querySelectorAll('.channel-tile');
+            channelTiles.forEach(tile => {
+                const channelName = tile.querySelector('.channel-name').textContent.toLowerCase();
+                if (channelName.includes(searchValue)) {
+                    tile.style.display = '';
+                } else {
+                    tile.style.display = 'none';
+                }
+            });
+        }
+
+        // Load the channels when the page is ready
+        window.onload = () => {
+            loadChannels();
+        };
+    </script>
+
+</body>
+</html>
