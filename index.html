@@ -11,12 +11,16 @@
             color: white;
             margin: 0;
             padding: 20px;
+            overflow: hidden; /* Prevents scrollbars from appearing */
+            position: relative;
         }
 
         #player-container {
             display: flex;
             flex-direction: column;
             align-items: center;
+            position: relative; /* Ensures player stays on top of falling elements */
+            z-index: 2; /* Brings player on top */
         }
 
         /* Neon glow controlled by CSS variables */
@@ -149,6 +153,51 @@
             margin: 20px 0;
             display: none;
         }
+
+        /* Snowflakes and gifts */
+        .snowflake, .gift {
+            position: absolute;
+            font-size: 24px;
+            opacity: 0.8;
+            pointer-events: none;
+            animation-timing-function: linear;
+            z-index: 1;
+        }
+
+        .snowflake {
+            animation: snow 15s infinite;
+        }
+
+        .gift {
+            animation: gift 12s infinite;
+        }
+
+        @keyframes snow {
+            0% {
+                top: -50px;
+                left: 0%;
+                opacity: 1;
+            }
+            100% {
+                top: 100%;
+                left: 100%;
+                opacity: 0.5;
+            }
+        }
+
+        @keyframes gift {
+            0% {
+                top: -50px;
+                left: 50%;
+                opacity: 1;
+            }
+            100% {
+                top: 100%;
+                left: 50%;
+                opacity: 0.5;
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -267,7 +316,7 @@
                 channelName.textContent = channel.name;
                 tile.appendChild(channelName);
 
-                 tile.onclick = () => {
+                tile.onclick = () => {
                     playChannel(channel.url);
                 };
 
@@ -294,9 +343,35 @@
             });
         }
 
-        // Load the channels when the page is ready
+        // Create and animate snowflakes and gifts
+        function createSnowflakesAndGifts() {
+            const snowflakes = ["❄️", "❄️", "❄️", "❄️", "❄️"];
+            const gifts = ["🎁", "🎁", "🎁", "🎁"];
+            const body = document.body;
+
+            snowflakes.forEach(() => {
+                const snowflake = document.createElement('div');
+                snowflake.classList.add('snowflake');
+                snowflake.textContent = "❄️";
+                snowflake.style.left = `${Math.random() * 100}%`;
+                snowflake.style.animationDuration = `${Math.random() * 5 + 10}s`; // Randomize falling speed
+                body.appendChild(snowflake);
+            });
+
+            gifts.forEach(() => {
+                const gift = document.createElement('div');
+                gift.classList.add('gift');
+                gift.textContent = "🎁";
+                gift.style.left = `${Math.random() * 100}%`;
+                gift.style.animationDuration = `${Math.random() * 5 + 10}s`; // Randomize falling speed
+                body.appendChild(gift);
+            });
+        }
+
+        // Call the function to create snowflakes and gifts on page load
         window.onload = () => {
             loadChannels();
+            createSnowflakesAndGifts();
         };
     </script>
 
