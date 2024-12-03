@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>web ipTV</title>
+    <title>web ipTv</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,16 +11,12 @@
             color: white;
             margin: 0;
             padding: 20px;
-            overflow: hidden; /* Prevents scrollbars from appearing */
-            position: relative;
         }
 
         #player-container {
             display: flex;
             flex-direction: column;
             align-items: center;
-            position: relative; /* Ensures player stays on top of falling elements */
-            z-index: 2; /* Brings player on top */
         }
 
         /* Neon glow controlled by CSS variables */
@@ -153,51 +149,6 @@
             margin: 20px 0;
             display: none;
         }
-
-        /* Snowflakes and gifts */
-        .snowflake, .gift {
-            position: absolute;
-            font-size: 24px;
-            opacity: 0.8;
-            pointer-events: none;
-            animation-timing-function: linear;
-            z-index: 1;
-        }
-
-        .snowflake {
-            animation: snow 15s infinite;
-        }
-
-        .gift {
-            animation: gift 12s infinite;
-        }
-
-        @keyframes snow {
-            0% {
-                top: -50px;
-                left: 0%;
-                opacity: 1;
-            }
-            100% {
-                top: 100%;
-                left: 100%;
-                opacity: 0.5;
-            }
-        }
-
-        @keyframes gift {
-            0% {
-                top: -50px;
-                left: 50%;
-                opacity: 1;
-            }
-            100% {
-                top: 100%;
-                left: 50%;
-                opacity: 0.5;
-            }
-        }
-
     </style>
 </head>
 <body>
@@ -205,12 +156,12 @@
     <div id="player-container">
         <div id="web-ipTV">web IPTV</div>
         
-        <video id="video" controls playsinline autoplay></video>
+        <video id="video" controls playsinline autoplay></video> <!-- Autoplay without muted -->
 
         <div id="search-bar-container">
             <input type="text" id="search-bar" placeholder="Search for channels..." onkeyup="filterChannels()">
             <div id="neon-switch">
-                <div id="neon-toggle" class="active" onclick="toggleNeon()">lëd⚡</div>
+                <div id="neon-toggle" class="active" onclick="toggleNeon()">neon⚡</div>
             </div>
         </div>
 
@@ -221,17 +172,16 @@
         </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
     <script>
         const m3uLink = 'https://raw.githubusercontent.com/rahul979854/iptvfree/main/assess';
-        const targetUrl = 'https://abplivetv.akamaized.net/hls/live/2043010/hindi/master.m3u8';
+        const targetUrl = 'https://line.dinott.com:80/play/live.php?mac=00:1A:79:C2:EB:42&stream=156139&extension=ts&play_token=DPBH1OEcxu';
 
-        // Neon lights toggle functionality
         let neonActive = true;
 
         function toggleNeon() {
             const video = document.querySelector('video');
             const toggleButton = document.getElementById('neon-toggle');
-
             if (neonActive) {
                 video.style.boxShadow = 'none';
                 toggleButton.classList.remove('active');
@@ -240,11 +190,6 @@
                 toggleButton.classList.add('active');
             }
             neonActive = !neonActive;
-
-            // Haptic feedback for toggle button
-            if (navigator.vibrate) {
-                navigator.vibrate(100); // Medium vibration for toggle
-            }
         }
 
         async function fetchM3U() {
@@ -293,16 +238,6 @@
                 return;
             }
 
-            // Search for the specific channel to auto-play
-            const targetChannel = channels.find(channel => channel.url === targetUrl);
-
-            if (targetChannel) {
-                playChannel(targetChannel.url); // Auto-play the found channel
-            } else {
-                // If target URL not found, default to the first channel
-                playChannel(channels[0].url);
-            }
-
             channels.forEach(channel => {
                 const tile = document.createElement('div');
                 tile.classList.add('channel-tile');
@@ -326,8 +261,27 @@
 
         function playChannel(url) {
             const video = document.getElementById('video');
-            video.src = url;
-            video.play();
+// Check if the URL contains 'line.dinott.com' or 'starshare.live' to use HLS
+            if (url.includes('line.dinott.com') || url.includes('starshare.live')) {
+                if (Hls.isSupported()) {
+                    const hls = new Hls();
+                    hls.loadSource(url);
+                    hls.attachMedia(video);
+                    hls.on(Hls.Events.MANIFEST_PARSED, function () {
+                        video.play();
+                    });
+                } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+                    // Native support for HLS on iOS
+                    video.src = url;
+                    video.play();
+                } else {
+                    console.error("HLS not supported on this browser.");
+                }
+            } else {
+                // For non-HLS channels (MP4, HTTP URLs, etc.)
+                video.src = url;
+                video.play();
+            }
         }
 
         function filterChannels() {
@@ -343,37 +297,12 @@
             });
         }
 
-        // Create and animate snowflakes and gifts
-        function createSnowflakesAndGifts() {
-            const snowflakes = ["❄️", "❄️", "❄️", "❄️", "❄️"];
-            const gifts = ["🎁", "🎁", "🎁", "🎁"];
-            const body = document.body;
-
-            snowflakes.forEach(() => {
-                const snowflake = document.createElement('div');
-                snowflake.classList.add('snowflake');
-                snowflake.textContent = "❄️";
-                snowflake.style.left = `${Math.random() * 100}%`;
-                snowflake.style.animationDuration = `${Math.random() * 5 + 10}s`; // Randomize falling speed
-                body.appendChild(snowflake);
-            });
-
-            gifts.forEach(() => {
-                const gift = document.createElement('div');
-                gift.classList.add('gift');
-                gift.textContent = "🎁";
-                gift.style.left = `${Math.random() * 100}%`;
-                gift.style.animationDuration = `${Math.random() * 5 + 10}s`; // Randomize falling speed
-                body.appendChild(gift);
-            });
-        }
-
-        // Call the function to create snowflakes and gifts on page load
+        // Load the channels when the page is ready
         window.onload = () => {
             loadChannels();
-            createSnowflakesAndGifts();
         };
     </script>
 
 </body>
 </html>
+            
