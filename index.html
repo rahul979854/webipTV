@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>web ipTv</title>
+    <title>web IPTV</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -57,16 +57,15 @@
             justify-content: space-between;
             width: 100%;
             margin: 20px 0;
-            gap: 0; /* Removed any gap between search bar and neon switch */
         }
 
         #search-bar {
-            width: 80%; /* Adjusted width for better alignment */
+            width: 80%;
             padding: 10px;
             font-size: 16px;
             background-color: rgba(255, 255, 255, 0.1);
             border: none;
-            border-radius: 5px 0 0 5px; /* Rounded edges on the left */
+            border-radius: 5px 0 0 5px;
             color: white;
             backdrop-filter: blur(5px);
             transition: background-color 0.3s ease;
@@ -80,15 +79,14 @@
         #neon-switch {
             display: flex;
             align-items: center;
-            width: 20%; /* Adjusted width */
-            margin-left: 0; /* Removed margin */
+            width: 20%;
         }
 
         #neon-toggle {
             cursor: pointer;
             padding: 10px;
             border: 1px solid #555;
-            border-radius: 0 5px 5px 0; /* Rounded edges on the right */
+            border-radius: 0 5px 5px 0;
             background-color: rgba(255, 255, 255, 0.1);
             color: white;
             transition: background-color 0.3s ease, color 0.3s ease;
@@ -152,7 +150,6 @@
     </style>
 </head>
 <body>
-
     <div id="player-container">
         <div id="web-ipTV">web IPTV</div>
         
@@ -228,9 +225,9 @@
 
         async function loadChannels() {
             const loadingDiv = document.getElementById('loading');
-            loadingDiv.style.display = 'block'; // Show loading
+            loadingDiv.style.display = 'block';
             const channels = await fetchM3U();
-            loadingDiv.style.display = 'none'; // Hide loading
+            loadingDiv.style.display = 'none';
             const channelList = document.getElementById('channel-list');
 
             if (channels.length === 0) {
@@ -261,35 +258,30 @@
 
         function playChannel(url) {
             const video = document.getElementById('video');
-// Check if the URL contains 'line.dinott.com' or 'starshare.live' to use HLS
-            if (url.includes('line.dinott.com') || url.includes('starshare.live')) {
-                if (Hls.isSupported()) {
-                    const hls = new Hls();
-                    hls.loadSource(url);
-                    hls.attachMedia(video);
-                    hls.on(Hls.Events.MANIFEST_PARSED, function () {
-                        video.play();
-                    });
-                } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-                    // Native support for HLS on iOS
-                    video.src = url;
+            if (Hls.isSupported()) {
+                const hls = new Hls();
+                hls.loadSource(url);
+                hls.attachMedia(video);
+                hls.on(Hls.Events.MANIFEST_PARSED, function () {
+                    video.muted = false;
                     video.play();
-                } else {
-                    console.error("HLS not supported on this browser.");
-                }
-            } else {
-                // For non-HLS channels (MP4, HTTP URLs, etc.)
+                });
+            } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
                 video.src = url;
+                video.muted = false;
                 video.play();
+            } else {
+                alert('This browser does not support HLS playback.');
             }
         }
 
         function filterChannels() {
-            const searchValue = document.getElementById('search-bar').value.toLowerCase();
-            const channelTiles = document.querySelectorAll('.channel-tile');
-            channelTiles.forEach(tile => {
+            const searchInput = document.getElementById('search-bar').value.toLowerCase();
+            const channelTiles = document.getElementsByClassName('channel-tile');
+
+            Array.from(channelTiles).forEach(tile => {
                 const channelName = tile.querySelector('.channel-name').textContent.toLowerCase();
-                if (channelName.includes(searchValue)) {
+                if (channelName.includes(searchInput)) {
                     tile.style.display = '';
                 } else {
                     tile.style.display = 'none';
@@ -297,12 +289,10 @@
             });
         }
 
-        // Load the channels when the page is ready
-        window.onload = () => {
+        document.addEventListener('DOMContentLoaded', () => {
             loadChannels();
-        };
+            playChannel(targetUrl); // Default channel to play on load
+        });
     </script>
-
 </body>
 </html>
-            
