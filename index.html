@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>web IPTV</title>
+    <title>web ipTV</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -156,12 +156,12 @@
     <div id="player-container">
         <div id="web-ipTV">web IPTV</div>
         
-           <video id="video" controls playsinline autoplay></video> <!-- Autoplay without muted -->
+        <video id="video" controls playsinline autoplay></video>
 
         <div id="search-bar-container">
             <input type="text" id="search-bar" placeholder="Search for channels..." onkeyup="filterChannels()">
             <div id="neon-switch">
-                <div id="neon-toggle" class="active" onclick="toggleNeon()">neon⚡</div>
+                <div id="neon-toggle" class="active" onclick="toggleNeon()">lëd⚡</div>
             </div>
         </div>
 
@@ -172,16 +172,17 @@
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
     <script>
         const m3uLink = 'https://raw.githubusercontent.com/rahul979854/iptvfree/main/assess';
-        const targetUrl = 'https://line.dinott.com:80/play/live.php?mac=00:1A:79:C2:EB:42&stream=156139&extension=ts&play_token=DPBH1OEcxu';
+        const targetUrl = 'https://sabliveyupp.akamaized.net/v1/manifest/611d79b11b77e2f571934fd80ca1413453772ac7/sablive_https/34a66bf7-e82c-4d52-b326-c2b658b1564f/3.m3u8';
 
+        // Neon lights toggle functionality
         let neonActive = true;
 
         function toggleNeon() {
             const video = document.querySelector('video');
             const toggleButton = document.getElementById('neon-toggle');
+
             if (neonActive) {
                 video.style.boxShadow = 'none';
                 toggleButton.classList.remove('active');
@@ -190,6 +191,11 @@
                 toggleButton.classList.add('active');
             }
             neonActive = !neonActive;
+
+            // Haptic feedback for toggle button
+            if (navigator.vibrate) {
+                navigator.vibrate(100); // Medium vibration for toggle
+            }
         }
 
         async function fetchM3U() {
@@ -238,6 +244,16 @@
                 return;
             }
 
+            // Search for the specific channel to auto-play
+            const targetChannel = channels.find(channel => channel.url === targetUrl);
+
+            if (targetChannel) {
+                playChannel(targetChannel.url); // Auto-play the found channel
+            } else {
+                // If target URL not found, default to the first channel
+                playChannel(channels[0].url);
+            }
+
             channels.forEach(channel => {
                 const tile = document.createElement('div');
                 tile.classList.add('channel-tile');
@@ -251,7 +267,7 @@
                 channelName.textContent = channel.name;
                 tile.appendChild(channelName);
 
-                tile.onclick = () => {
+                 tile.onclick = () => {
                     playChannel(channel.url);
                 };
 
@@ -261,28 +277,8 @@
 
         function playChannel(url) {
             const video = document.getElementById('video');
-
-            // Check if the URL domain is 'starshare.live' and use HLS.js for HLS streams
-            if (url.includes('starshare.live')) {
-                if (Hls.isSupported()) {
-                    const hls = new Hls();
-                    hls.loadSource(url);
-                    hls.attachMedia(video);
-                    hls.on(Hls.Events.MANIFEST_PARSED, function () {
-                        video.play();
-                    });
-                } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-                    // Native support for HLS on iOS
-                    video.src = url;
-                    video.play();
-                } else {
-                    console.error("HLS not supported on this browser.");
-                }
-            } else {
-                // For non-HLS channels (MP4, HTTP URLs, etc.)
-                video.src = url;
-                video.play();
-            }
+            video.src = url;
+            video.play();
         }
 
         function filterChannels() {
