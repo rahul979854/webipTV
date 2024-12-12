@@ -57,16 +57,16 @@
             justify-content: space-between;
             width: 100%;
             margin: 20px 0;
-            gap: 0; /* Removed any gap between search bar and neon switch */
+            gap: 0;
         }
 
         #search-bar {
-            width: 80%; /* Adjusted width for better alignment */
+            width: 80%;
             padding: 10px;
             font-size: 16px;
             background-color: rgba(255, 255, 255, 0.1);
             border: none;
-            border-radius: 5px 0 0 5px; /* Rounded edges on the left */
+            border-radius: 5px 0 0 5px;
             color: white;
             backdrop-filter: blur(5px);
             transition: background-color 0.3s ease;
@@ -80,15 +80,15 @@
         #neon-switch {
             display: flex;
             align-items: center;
-            width: 20%; /* Adjusted width */
-            margin-left: 0; /* Removed margin */
+            width: 20%;
+            margin-left: 0;
         }
 
         #neon-toggle {
             cursor: pointer;
             padding: 10px;
             border: 1px solid #555;
-            border-radius: 0 5px 5px 0; /* Rounded edges on the right */
+            border-radius: 0 5px 5px 0;
             background-color: rgba(255, 255, 255, 0.1);
             color: white;
             transition: background-color 0.3s ease, color 0.3s ease;
@@ -176,7 +176,6 @@
         const m3uLink = 'https://raw.githubusercontent.com/rahul979854/iptvfree/main/assess';
         const targetUrl = 'https://sabliveyupp.akamaized.net/v1/manifest/611d79b11b77e2f571934fd80ca1413453772ac7/sablive_https/34a66bf7-e82c-4d52-b326-c2b658b1564f/3.m3u8';
 
-        // Neon lights toggle functionality
         let neonActive = true;
 
         function toggleNeon() {
@@ -192,9 +191,8 @@
             }
             neonActive = !neonActive;
 
-            // Haptic feedback for toggle button
             if (navigator.vibrate) {
-                navigator.vibrate(100); // Medium vibration for toggle
+                navigator.vibrate(100);
             }
         }
 
@@ -234,9 +232,9 @@
 
         async function loadChannels() {
             const loadingDiv = document.getElementById('loading');
-            loadingDiv.style.display = 'block'; // Show loading
+            loadingDiv.style.display = 'block';
             const channels = await fetchM3U();
-            loadingDiv.style.display = 'none'; // Hide loading
+            loadingDiv.style.display = 'none';
             const channelList = document.getElementById('channel-list');
 
             if (channels.length === 0) {
@@ -244,13 +242,11 @@
                 return;
             }
 
-            // Search for the specific channel to auto-play
             const targetChannel = channels.find(channel => channel.url === targetUrl);
 
             if (targetChannel) {
-                playChannel(targetChannel.url); // Auto-play the found channel
+                playChannel(targetChannel.url);
             } else {
-                // If target URL not found, default to the first channel
                 playChannel(channels[0].url);
             }
 
@@ -267,7 +263,7 @@
                 channelName.textContent = channel.name;
                 tile.appendChild(channelName);
 
-                 tile.onclick = () => {
+                tile.onclick = () => {
                     playChannel(channel.url);
                 };
 
@@ -279,6 +275,19 @@
             const video = document.getElementById('video');
             video.src = url;
             video.play();
+
+            // Auto-replay logic
+            video.onended = () => {
+                video.src = url;
+                video.play();
+            };
+
+            video.onerror = () => {
+                setTimeout(() => {
+                    video.src = url;
+                    video.play();
+                }, 0);
+            };
         }
 
         function filterChannels() {
@@ -294,7 +303,6 @@
             });
         }
 
-        // Load the channels when the page is ready
         window.onload = () => {
             loadChannels();
         };
