@@ -1,0 +1,537 @@
+#EXTM3U
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep1
+http://starshare.live/series/bana/bana/133175.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep2
+http://starshare.live/series/bana/bana/133176.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep3
+http://starshare.live/series/bana/bana/133177.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep4
+http://starshare.live/series/bana/bana/133178.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep5
+http://starshare.live/series/bana/bana/133179.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep6
+http://starshare.live/series/bana/bana/133180.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep7
+http://starshare.live/series/bana/bana/133181.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep8
+http://starshare.live/series/bana/bana/133182.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep9
+http://starshare.live/series/bana/bana/133183.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep10
+http://starshare.live/series/bana/bana/133184.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep11
+http://starshare.live/series/bana/bana/133185.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep12
+http://starshare.live/series/bana/bana/133186.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep13
+http://starshare.live/series/bana/bana/133187.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep14
+http://starshare.live/series/bana/bana/133188.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep15
+http://starshare.live/series/bana/bana/133189.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep16
+http://starshare.live/series/bana/bana/133190.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep17
+http://starshare.live/series/bana/bana/133191.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep18
+http://starshare.live/series/bana/bana/133192.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep19
+http://starshare.live/series/bana/bana/133193.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep20
+http://starshare.live/series/bana/bana/133194.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep21
+http://starshare.live/series/bana/bana/133195.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep22
+http://starshare.live/series/bana/bana/133196.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep23
+http://starshare.live/series/bana/bana/133197.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep24
+http://starshare.live/series/bana/bana/133198.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep25
+http://starshare.live/series/bana/bana/133199.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep26
+http://starshare.live/series/bana/bana/133200.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep27
+http://starshare.live/series/bana/bana/133201.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep28
+http://starshare.live/series/bana/bana/133202.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep29
+http://starshare.live/series/bana/bana/133203.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep30
+http://starshare.live/series/bana/bana/133204.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep31
+http://starshare.live/series/bana/bana/133205.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep32
+http://starshare.live/series/bana/bana/133206.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep33
+http://starshare.live/series/bana/bana/133207.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep34
+http://starshare.live/series/bana/bana/133208.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep35
+http://starshare.live/series/bana/bana/133209.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep36
+http://starshare.live/series/bana/bana/133210.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep37
+http://starshare.live/series/bana/bana/133211.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep38
+http://starshare.live/series/bana/bana/133212.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep39
+http://starshare.live/series/bana/bana/133213.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep40
+http://starshare.live/series/bana/bana/133214.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep41
+http://starshare.live/series/bana/bana/133215.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep42
+http://starshare.live/series/bana/bana/133216.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep43
+http://starshare.live/series/bana/bana/133217.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep44
+http://starshare.live/series/bana/bana/133218.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep45
+http://starshare.live/series/bana/bana/133219.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep46
+http://starshare.live/series/bana/bana/133220.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep47
+http://starshare.live/series/bana/bana/133221.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep48
+http://starshare.live/series/bana/bana/133222.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep49
+http://starshare.live/series/bana/bana/133223.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep50
+http://starshare.live/series/bana/bana/133224.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep51
+http://starshare.live/series/bana/bana/133225.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep52
+http://starshare.live/series/bana/bana/133226.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep53
+http://starshare.live/series/bana/bana/133227.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep54
+http://starshare.live/series/bana/bana/133228.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep55
+http://starshare.live/series/bana/bana/133229.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep56
+http://starshare.live/series/bana/bana/133230.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep57
+http://starshare.live/series/bana/bana/133231.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep58
+http://starshare.live/series/bana/bana/133232.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep59
+http://starshare.live/series/bana/bana/133233.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep60
+http://starshare.live/series/bana/bana/133234.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep61
+http://starshare.live/series/bana/bana/133235.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep62
+http://starshare.live/series/bana/bana/133236.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep63
+http://starshare.live/series/bana/bana/133237.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep64
+http://starshare.live/series/bana/bana/133238.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep65
+http://starshare.live/series/bana/bana/133239.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep66
+http://starshare.live/series/bana/bana/133240.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep67
+http://starshare.live/series/bana/bana/133241.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep68
+http://starshare.live/series/bana/bana/133242.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep69
+http://starshare.live/series/bana/bana/133243.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep70
+http://starshare.live/series/bana/bana/133244.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep71
+http://starshare.live/series/bana/bana/133245.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep72
+http://starshare.live/series/bana/bana/133246.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep73
+http://starshare.live/series/bana/bana/133247.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep74
+http://starshare.live/series/bana/bana/133248.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep75
+http://starshare.live/series/bana/bana/133249.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep76
+http://starshare.live/series/bana/bana/133250.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep77
+http://starshare.live/series/bana/bana/133251.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep78
+http://starshare.live/series/bana/bana/133252.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep79
+http://starshare.live/series/bana/bana/133253.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep80
+http://starshare.live/series/bana/bana/133254.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep81
+http://starshare.live/series/bana/bana/133255.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep82
+http://starshare.live/series/bana/bana/133256.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep83
+http://starshare.live/series/bana/bana/133257.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep84
+http://starshare.live/series/bana/bana/133258.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep85
+http://starshare.live/series/bana/bana/133259.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep86
+http://starshare.live/series/bana/bana/133260.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep87
+http://starshare.live/series/bana/bana/133261.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep88
+http://starshare.live/series/bana/bana/133262.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep89
+http://starshare.live/series/bana/bana/133263.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep90
+http://starshare.live/series/bana/bana/133264.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep91
+http://starshare.live/series/bana/bana/133265.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep92
+http://starshare.live/series/bana/bana/133266.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep93
+http://starshare.live/series/bana/bana/133267.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep94
+http://starshare.live/series/bana/bana/133268.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep95
+http://starshare.live/series/bana/bana/133269.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep96
+http://starshare.live/series/bana/bana/133270.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep97
+http://starshare.live/series/bana/bana/133271.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep98
+http://starshare.live/series/bana/bana/133272.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep99
+http://starshare.live/series/bana/bana/133273.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep100
+http://starshare.live/series/bana/bana/133274.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep101
+http://starshare.live/series/bana/bana/133275.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep102
+http://starshare.live/series/bana/bana/133276.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep103
+http://starshare.live/series/bana/bana/133277.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep104
+http://starshare.live/series/bana/bana/133278.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep105
+http://starshare.live/series/bana/bana/133279.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep106
+http://starshare.live/series/bana/bana/133280.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep107
+http://starshare.live/series/bana/bana/133281.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep108
+http://starshare.live/series/bana/bana/133282.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep109
+http://starshare.live/series/bana/bana/133283.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep110
+http://starshare.live/series/bana/bana/133284.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep111
+http://starshare.live/series/bana/bana/133285.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep112
+http://starshare.live/series/bana/bana/133286.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep113
+http://starshare.live/series/bana/bana/133287.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep114
+http://starshare.live/series/bana/bana/133288.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep115
+http://starshare.live/series/bana/bana/133289.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep116
+http://starshare.live/series/bana/bana/133290.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep117
+http://starshare.live/series/bana/bana/133291.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep118
+http://starshare.live/series/bana/bana/133292.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep119
+http://starshare.live/series/bana/bana/133293.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep120
+http://starshare.live/series/bana/bana/133294.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep121
+http://starshare.live/series/bana/bana/133295.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep122
+http://starshare.live/series/bana/bana/133296.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep123
+http://starshare.live/series/bana/bana/133297.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep124
+http://starshare.live/series/bana/bana/133298.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep125
+http://starshare.live/series/bana/bana/133299.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep126
+http://starshare.live/series/bana/bana/133300.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep127
+http://starshare.live/series/bana/bana/133301.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep128
+http://starshare.live/series/bana/bana/133302.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep129
+http://starshare.live/series/bana/bana/133303.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep130
+http://starshare.live/series/bana/bana/133304.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep131
+http://starshare.live/series/bana/bana/133305.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep132
+http://starshare.live/series/bana/bana/133306.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep133
+http://starshare.live/series/bana/bana/133307.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep134
+http://starshare.live/series/bana/bana/133308.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep135
+http://starshare.live/series/bana/bana/133309.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep136
+http://starshare.live/series/bana/bana/133310.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep137
+http://starshare.live/series/bana/bana/133311.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep138
+http://starshare.live/series/bana/bana/133312.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep139
+http://starshare.live/series/bana/bana/133313.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep140
+http://starshare.live/series/bana/bana/133314.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep141
+http://starshare.live/series/bana/bana/133315.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep142
+http://starshare.live/series/bana/bana/133316.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep143
+http://starshare.live/series/bana/bana/133317.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep144
+http://starshare.live/series/bana/bana/133318.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep145
+http://starshare.live/series/bana/bana/133319.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep146
+http://starshare.live/series/bana/bana/133320.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep147
+http://starshare.live/series/bana/bana/133321.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep148
+http://starshare.live/series/bana/bana/133322.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep149
+http://starshare.live/series/bana/bana/133323.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep150
+http://starshare.live/series/bana/bana/133324.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep151
+http://starshare.live/series/bana/bana/133325.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep152
+http://starshare.live/series/bana/bana/133326.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep153
+http://starshare.live/series/bana/bana/133327.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep154
+http://starshare.live/series/bana/bana/133328.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep155
+http://starshare.live/series/bana/bana/133329.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep156
+http://starshare.live/series/bana/bana/133330.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep157
+http://starshare.live/series/bana/bana/133331.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep158
+http://starshare.live/series/bana/bana/133332.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep159
+http://starshare.live/series/bana/bana/133333.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep160
+http://starshare.live/series/bana/bana/133334.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep161
+http://starshare.live/series/bana/bana/133335.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep162
+http://starshare.live/series/bana/bana/133336.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep163
+http://starshare.live/series/bana/bana/133337.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep164
+http://starshare.live/series/bana/bana/133338.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep165
+http://starshare.live/series/bana/bana/133339.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep166
+http://starshare.live/series/bana/bana/133340.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep167
+http://starshare.live/series/bana/bana/133341.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep168
+http://starshare.live/series/bana/bana/133342.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep169
+http://starshare.live/series/bana/bana/133343.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep170
+http://starshare.live/series/bana/bana/133344.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep171
+http://starshare.live/series/bana/bana/133345.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep172
+http://starshare.live/series/bana/bana/133346.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep173
+http://starshare.live/series/bana/bana/133347.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep174
+http://starshare.live/series/bana/bana/133348.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep175
+http://starshare.live/series/bana/bana/133349.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep176
+http://starshare.live/series/bana/bana/133350.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep177
+http://starshare.live/series/bana/bana/133351.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep178
+http://starshare.live/series/bana/bana/133352.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep179
+http://starshare.live/series/bana/bana/133353.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep180
+http://starshare.live/series/bana/bana/133354.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep181
+http://starshare.live/series/bana/bana/133355.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep182
+http://starshare.live/series/bana/bana/133356.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep183
+http://starshare.live/series/bana/bana/133357.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep184
+http://starshare.live/series/bana/bana/133358.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep185
+http://starshare.live/series/bana/bana/133359.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep186
+http://starshare.live/series/bana/bana/133360.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep187
+http://starshare.live/series/bana/bana/133361.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep188
+http://starshare.live/series/bana/bana/133362.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep189
+http://starshare.live/series/bana/bana/133363.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep190
+http://starshare.live/series/bana/bana/133364.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep191
+http://starshare.live/series/bana/bana/133365.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep192
+http://starshare.live/series/bana/bana/133366.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep193
+http://starshare.live/series/bana/bana/133367.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep194
+http://starshare.live/series/bana/bana/133368.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep195
+http://starshare.live/series/bana/bana/133369.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep196
+http://starshare.live/series/bana/bana/133370.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep197
+http://starshare.live/series/bana/bana/133371.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep198
+http://starshare.live/series/bana/bana/133372.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep199
+http://starshare.live/series/bana/bana/133373.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep200
+http://starshare.live/series/bana/bana/133374.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep201
+http://starshare.live/series/bana/bana/133375.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep202
+http://starshare.live/series/bana/bana/133376.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep203
+http://starshare.live/series/bana/bana/133377.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep204
+http://starshare.live/series/bana/bana/133378.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep205
+http://starshare.live/series/bana/bana/133379.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep206
+http://starshare.live/series/bana/bana/133380.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep207
+http://starshare.live/series/bana/bana/133381.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep208
+http://starshare.live/series/bana/bana/133382.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep209
+http://starshare.live/series/bana/bana/133383.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep210
+http://starshare.live/series/bana/bana/133384.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep211
+http://starshare.live/series/bana/bana/133385.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep212
+http://starshare.live/series/bana/bana/133386.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep213
+http://starshare.live/series/bana/bana/133387.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep214
+http://starshare.live/series/bana/bana/133388.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep215
+http://starshare.live/series/bana/bana/133389.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep216
+http://starshare.live/series/bana/bana/133390.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep217
+http://starshare.live/series/bana/bana/133391.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep218
+http://starshare.live/series/bana/bana/133392.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep219
+http://starshare.live/series/bana/bana/133393.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep220
+http://starshare.live/series/bana/bana/133394.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep221
+http://starshare.live/series/bana/bana/133395.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep222
+http://starshare.live/series/bana/bana/133396.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep223
+http://starshare.live/series/bana/bana/133397.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep224
+http://starshare.live/series/bana/bana/133398.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep225
+http://starshare.live/series/bana/bana/133399.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep226
+http://starshare.live/series/bana/bana/133400.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep227
+http://starshare.live/series/bana/bana/133401.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep228
+http://starshare.live/series/bana/bana/133402.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep229
+http://starshare.live/series/bana/bana/133403.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep230
+http://starshare.live/series/bana/bana/133404.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep231
+http://starshare.live/series/bana/bana/133405.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep232
+http://starshare.live/series/bana/bana/133406.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep233
+http://starshare.live/series/bana/bana/133407.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep234
+http://starshare.live/series/bana/bana/133408.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep235
+http://starshare.live/series/bana/bana/133409.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep236
+http://starshare.live/series/bana/bana/133410.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep237
+http://starshare.live/series/bana/bana/133411.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep238
+http://starshare.live/series/bana/bana/133412.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep239
+http://starshare.live/series/bana/bana/133413.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep240
+http://starshare.live/series/bana/bana/133414.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep241
+http://starshare.live/series/bana/bana/133415.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep242
+http://starshare.live/series/bana/bana/133416.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep243
+http://starshare.live/series/bana/bana/133417.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep244
+http://starshare.live/series/bana/bana/133418.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep245
+http://starshare.live/series/bana/bana/133419.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep246
+http://starshare.live/series/bana/bana/133420.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep247
+http://starshare.live/series/bana/bana/133421.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep248
+http://starshare.live/series/bana/bana/133422.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep249
+http://starshare.live/series/bana/bana/133423.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep250
+http://starshare.live/series/bana/bana/133424.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep251
+http://starshare.live/series/bana/bana/133425.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep252
+http://starshare.live/series/bana/bana/133426.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep253
+http://starshare.live/series/bana/bana/133427.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep254
+http://starshare.live/series/bana/bana/133428.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep255
+http://starshare.live/series/bana/bana/133429.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep256
+http://starshare.live/series/bana/bana/133430.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep257
+http://starshare.live/series/bana/bana/133431.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep258
+http://starshare.live/series/bana/bana/133432.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep259
+http://starshare.live/series/bana/bana/133433.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep260
+http://starshare.live/series/bana/bana/133434.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep261
+http://starshare.live/series/bana/bana/133435.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep262
+http://starshare.live/series/bana/bana/133436.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep263
+http://starshare.live/series/bana/bana/133437.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep264
+http://starshare.live/series/bana/bana/133438.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep265
+http://starshare.live/series/bana/bana/133439.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep266
+http://starshare.live/series/bana/bana/133440.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep267
+http://starshare.live/series/bana/bana/133441.mp4
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7NW7M8H5II5rJKZf-PBxoHr2QVTTp2ALFQ&s", Ep268
+http://starshare.live/series/bana/bana/133442.mp4
