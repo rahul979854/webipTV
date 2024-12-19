@@ -19,19 +19,6 @@
             align-items: center;
         }
 
-        /* Neon glow controlled by CSS variables */
-        video {
-            width: 100%;
-            height: auto;
-            max-width: 100%;
-            margin-bottom: 20px;
-            aspect-ratio: 16/9;
-            border-radius: 10px;
-            box-shadow: 0 0 15px var(--neon-color, #00f), 0 0 30px var(--neon-color, #00f),
-                        0 0 45px var(--neon-color, #f0f), 0 0 60px var(--neon-color, #f0f);
-            transition: box-shadow 0.2s ease;
-        }
-
         #web-ipTV {
             font-size: 30px;
             font-weight: bold;
@@ -96,11 +83,6 @@
             text-align: center;
         }
 
-        #neon-toggle.active {
-            background-color: green;
-            color: white;
-        }
-
         #channel-list-container {
             width: 100%;
             max-height: 400px;
@@ -155,8 +137,6 @@
 
     <div id="player-container">
         <div id="web-ipTV">web IPTV</div>
-        
-        <video id="video" controls playsinline autoplay></video>
 
         <div id="search-bar-container">
             <input type="text" id="search-bar" placeholder="Search for channels..." onkeyup="filterChannels()">
@@ -173,20 +153,16 @@
     </div>
 
     <script>
-        const m3uLink = 'https://raw.githubusercontent.com/rahul979854/iptvfree/main/assess';
-        const targetUrl = 'https://sabliveyupp.akamaized.net/v1/manifest/611d79b11b77e2f571934fd80ca1413453772ac7/sablive_https/34a66bf7-e82c-4d52-b326-c2b658b1564f/3.m3u8';
+        const m3uLink = 'https://raw.githubusercontent.com/rahul979854/iptvfree/main/assess.txt';
 
         let neonActive = true;
 
         function toggleNeon() {
-            const video = document.querySelector('video');
             const toggleButton = document.getElementById('neon-toggle');
 
             if (neonActive) {
-                video.style.boxShadow = 'none';
                 toggleButton.classList.remove('active');
             } else {
-                video.style.boxShadow = '0 0 15px var(--neon-color, #00f), 0 0 30px var(--neon-color, #00f), 0 0 45px var(--neon-color, #f0f), 0 0 60px var(--neon-color, #f0f)';
                 toggleButton.classList.add('active');
             }
             neonActive = !neonActive;
@@ -242,14 +218,6 @@
                 return;
             }
 
-            const targetChannel = channels.find(channel => channel.url === targetUrl);
-
-            if (targetChannel) {
-                playChannel(targetChannel.url);
-            } else {
-                playChannel(channels[0].url);
-            }
-
             channels.forEach(channel => {
                 const tile = document.createElement('div');
                 tile.classList.add('channel-tile');
@@ -264,30 +232,11 @@
                 tile.appendChild(channelName);
 
                 tile.onclick = () => {
-                    playChannel(channel.url);
+                    window.open(channel.url, '_blank'); // Open in new tab
                 };
 
                 channelList.appendChild(tile);
             });
-        }
-
-        function playChannel(url) {
-            const video = document.getElementById('video');
-            video.src = url;
-            video.play();
-
-            // Auto-replay logic
-            video.onended = () => {
-                video.src = url;
-                video.play();
-            };
-
-            video.onerror = () => {
-                setTimeout(() => {
-                    video.src = url;
-                    video.play();
-                }, 0);
-            };
         }
 
         function filterChannels() {
