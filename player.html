@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+        }
+        #player {
+            width: 100%;
+            height: 100vh;
+        }
+    </style>
+    <script src="https://content.jwplatform.com/libraries/KB5zFt7A.js"></script>
+</head>
+<body>
+    <div id="player"></div>
+
+    <script>
+        // Function to get the video URL from query parameters
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+
+        // Get the video URL from the query string
+        const videoUrl = getQueryParam("videoUrl");
+
+        if (videoUrl) {
+            // Initialize the JWPlayer with the video URL
+            jwplayer("player").setup({
+                file: videoUrl,
+                controls: true,
+                autoplay: true,
+                width: "100%",
+                height: "100%",
+                displaytitle: true,
+                abouttext: "Powered by GitHub Pages",
+                aboutlink: "https://github.com/your-username"
+            });
+        } else {
+            alert("No video URL provided. Please go back and select a channel.");
+        }
+    </script>
+</body>
+</html>
