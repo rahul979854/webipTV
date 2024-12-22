@@ -19,6 +19,19 @@
             align-items: center;
         }
 
+        /* Neon glow controlled by CSS variables */
+        video {
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+            margin-bottom: 20px;
+            aspect-ratio: 16/9;
+            border-radius: 10px;
+            box-shadow: 0 0 15px var(--neon-color, #00f), 0 0 30px var(--neon-color, #00f),
+                        0 0 45px var(--neon-color, #f0f), 0 0 60px var(--neon-color, #f0f);
+            transition: box-shadow 0.2s ease;
+        }
+
         #web-ipTV {
             font-size: 30px;
             font-weight: bold;
@@ -44,16 +57,16 @@
             justify-content: space-between;
             width: 100%;
             margin: 20px 0;
-            gap: 0;
+            gap: 0; /* Removed any gap between search bar and neon switch */
         }
 
         #search-bar {
-            width: 80%;
+            width: 80%; /* Adjusted width for better alignment */
             padding: 10px;
             font-size: 16px;
             background-color: rgba(255, 255, 255, 0.1);
             border: none;
-            border-radius: 5px 0 0 5px;
+            border-radius: 5px 0 0 5px; /* Rounded edges on the left */
             color: white;
             backdrop-filter: blur(5px);
             transition: background-color 0.3s ease;
@@ -67,20 +80,25 @@
         #neon-switch {
             display: flex;
             align-items: center;
-            width: 20%;
-            margin-left: 0;
+            width: 20%; /* Adjusted width */
+            margin-left: 0; /* Removed margin */
         }
 
         #neon-toggle {
             cursor: pointer;
             padding: 10px;
             border: 1px solid #555;
-            border-radius: 0 5px 5px 0;
+            border-radius: 0 5px 5px 0; /* Rounded edges on the right */
             background-color: rgba(255, 255, 255, 0.1);
             color: white;
             transition: background-color 0.3s ease, color 0.3s ease;
             width: 100%;
             text-align: center;
+        }
+
+        #neon-toggle.active {
+            background-color: green;
+            color: white;
         }
 
         #channel-list-container {
@@ -137,6 +155,8 @@
 
     <div id="player-container">
         <div id="web-ipTV">web IPTV</div>
+        
+        <video id="video" controls playsinline autoplay></video>
 
         <div id="search-bar-container">
             <input type="text" id="search-bar" placeholder="Search for channels..." onkeyup="filterChannels()">
@@ -153,23 +173,28 @@
     </div>
 
     <script>
-        const m3uLink = 'https://raw.githubusercontent.com/rahul979854/iptvfree/main/assess.txt';
-        const playerPageUrl = 'https://player.updatesbyrahul.site';
+        const m3uLink = 'https://raw.githubusercontent.com/rahul979854/webipTV/main/playlists_Starr_pluss_mahabharat_Uhd.txt';
+        const targetUrl = 'http://starshare.live/series/bana/bana /133175.mp4';
 
+        // Neon lights toggle functionality
         let neonActive = true;
 
         function toggleNeon() {
+            const video = document.querySelector('video');
             const toggleButton = document.getElementById('neon-toggle');
 
             if (neonActive) {
+                video.style.boxShadow = 'none';
                 toggleButton.classList.remove('active');
             } else {
+                video.style.boxShadow = '0 0 15px var(--neon-color, #00f), 0 0 30px var(--neon-color, #00f), 0 0 45px var(--neon-color, #f0f), 0 0 60px var(--neon-color, #f0f)';
                 toggleButton.classList.add('active');
             }
             neonActive = !neonActive;
 
+            // Haptic feedback for toggle button
             if (navigator.vibrate) {
-                navigator.vibrate(100);
+                navigator.vibrate(100); // Medium vibration for toggle
             }
         }
 
@@ -209,14 +234,24 @@
 
         async function loadChannels() {
             const loadingDiv = document.getElementById('loading');
-            loadingDiv.style.display = 'block';
+            loadingDiv.style.display = 'block'; // Show loading
             const channels = await fetchM3U();
-            loadingDiv.style.display = 'none';
+            loadingDiv.style.display = 'none'; // Hide loading
             const channelList = document.getElementById('channel-list');
 
             if (channels.length === 0) {
                 channelList.innerHTML = '<div>No channels found.</div>';
                 return;
+            }
+
+            // Search for the specific channel to auto-play
+            const targetChannel = channels.find(channel => channel.url === targetUrl);
+
+            if (targetChannel) {
+                playChannel(targetChannel.url); // Auto-play the found channel
+            } else {
+                // If target URL not found, default to the first channel
+                playChannel(channels[0].url);
             }
 
             channels.forEach(channel => {
@@ -232,13 +267,18 @@
                 channelName.textContent = channel.name;
                 tile.appendChild(channelName);
 
-                tile.onclick = () => {
-                    // Redirect to player page with the channel URL as a query parameter
-                    window.location.href = `${playerPageUrl}?videoUrl=${encodeURIComponent(channel.url)}`;
+                 tile.onclick = () => {
+                    playChannel(channel.url);
                 };
 
                 channelList.appendChild(tile);
             });
+        }
+
+        function playChannel(url) {
+            const video = document.getElementById('video');
+            video.src = url;
+            video.play();
         }
 
         function filterChannels() {
@@ -254,6 +294,7 @@
             });
         }
 
+        // Load the channels when the page is ready
         window.onload = () => {
             loadChannels();
         };
