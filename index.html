@@ -154,6 +154,7 @@
 
     <script>
         const m3uLink = 'https://raw.githubusercontent.com/rahul979854/iptvfree/main/assess.txt';
+        const playerPageUrl = 'https://player.updatesbyrahul.site';
 
         let neonActive = true;
 
@@ -232,7 +233,8 @@
                 tile.appendChild(channelName);
 
                 tile.onclick = () => {
-                    window.location.href = `https://player.updatesbyrahul.site/?url=${encodeURIComponent(channel.url)}`;
+                    // Redirect to player page with the channel URL as a query parameter
+                    window.location.href = `${playerPageUrl}?videoUrl=${encodeURIComponent(channel.url)}`;
                 };
 
                 channelList.appendChild(tile);
